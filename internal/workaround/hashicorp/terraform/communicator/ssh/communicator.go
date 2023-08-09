@@ -185,9 +185,9 @@ func (c *Communicator) Connect(o terraform.UIOutput) (err error) {
 	}
 
 	log.Printf("[DEBUG] Connection established. Handshaking for user %v", c.connInfo.User)
-	sshConn, sshChan, req, err := ssh.NewClientConn(c.conn, hostAndPort, c.config.config)
+	sshConn, sshChan, req, err := ssh.NewClientConn(c.conn, c.connInfo.Host, c.config.config)
 	if err != nil {
-		err = errwrap.Wrapf(fmt.Sprintf("SSH authentication failed (%s@%s): {{err}}", c.connInfo.User, hostAndPort), err)
+		err = errwrap.Wrapf(fmt.Sprintf("SSH authentication failed (%s@%s): {{err}}", c.connInfo.User, c.connInfo.Host), err)
 
 		// While in theory this should be a fatal error, some hosts may start
 		// the ssh service before it is properly configured, or before user

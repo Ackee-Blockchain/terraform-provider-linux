@@ -1,4 +1,4 @@
-module github.com/TelkomIndonesia/terraform-provider-linux
+module github.com/AckeeBlockchain/terraform-provider-linux
 
 go 1.15
 
