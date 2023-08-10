@@ -1,10 +1,9 @@
 Terraform Provider Linux
 ========================
 
-[![Build Status](https://cloud.drone.io/api/badges/TelkomIndonesia/terraform-provider-linux/status.svg?branch=master)](https://cloud.drone.io/TelkomIndonesia/terraform-provider-linux)
-[![Go Report Card](https://goreportcard.com/badge/github.com/TelkomIndonesia/terraform-provider-linux)](https://goreportcard.com/report/github.com/TelkomIndonesia/terraform-provider-linux)
+Yeah, bro, I woke up and have my own terraform provider https://registry.terraform.io/providers/jaczkal/linux/latest.
 
-- Website: <https://registry.terraform.io/namespaces/TelkomIndonesia>
+It is the same as https://registry.terraform.io/namespaces/TelkomIndonesia but not 3y old - ssh works.
 
 Requirements
 ------------
